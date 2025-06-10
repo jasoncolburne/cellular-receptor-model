@@ -1,3 +1,7 @@
+include <BOSL2/std.scad>;
+include <brailleSCAD/en-us-g2.scad>;
+include <brailleSCAD/braille.scad>;
+
 module braille_on_cylinder(text,method="en-us-g2",size="small",style="sphere",radius,height,anchor,orient,spin)
 {
   legal_styles = ["sphere"];
@@ -29,7 +33,6 @@ module braille_on_cylinder(text,method="en-us-g2",size="small",style="sphere",ra
             let(y_cyl = radius * sin(theta))
             let(z_cyl = y)
             translate([x_cyl, y_cyl, z_cyl])
-                // should take height into account
                 sphere(_braille_r[ind]*INCH);
     }  children();
   }

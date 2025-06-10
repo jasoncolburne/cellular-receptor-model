@@ -1,6 +1,4 @@
-include <BOSL2/std.scad>;
-include <brailleSCAD/en-us-g2.scad>;
-include <brailleSCAD/braille.scad>;
+include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
 
 // read receptor.scad
@@ -20,11 +18,11 @@ module competitive_antagonist(bottom_radius, top_radius, height, resolution) {
             
         translate([0,0,height])
             back(_braille_line_sep[1]*INCH/2)
-            braille("competitive", $fn=50, size="large");
+            braille_on_flat("competitive", $fn=50, size="large");
 
         translate([0,0,height])
             fwd(_braille_line_sep[1]*INCH/2)
-            braille("antagonist", $fn=50, size="large");
+            braille_on_flat("antagonist", $fn=50, size="large");
     }
 }
 

@@ -1,6 +1,3 @@
-include <BOSL2/std.scad>;
-include <brailleSCAD/en-us-g2.scad>;
-include <brailleSCAD/braille.scad>;
 include <braille-on-cylinder.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
 include <Primitives.scad>;
