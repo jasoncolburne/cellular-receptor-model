@@ -3,6 +3,9 @@
 An accessible (braille) openSCAD teaching model of a cellular receptor and its ligands,
 suitable for 3d printing.
 
+This was created to support an effort by Team Visual Assist at Dalhousie University (Canada). This design was inspired by
+[the original](https://github.com/FilipKosel/3DDrugReceptor).
+
 The model was prototyped in Bambu Studio on a Bambu Lab A1 printer using standard settings
 and no AMS, after generating STL files using openSCAD.
 
