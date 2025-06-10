@@ -1,9 +1,5 @@
-include <BOSL2/std.scad>;
-include <brailleSCAD/en-us-g2.scad>;
-include <brailleSCAD/braille.scad>;
+include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
-
-// read receptor.scad
 
 module partial_agonist(bottom_radius, top_radius, hollow_radius, arm_bottom_width, arm_top_width, height) {
     union() {
@@ -20,11 +16,11 @@ module partial_agonist(bottom_radius, top_radius, hollow_radius, arm_bottom_widt
             
         translate([0,0,height])
             back(_braille_line_sep[1]*INCH/2)
-            braille("partial", $fn=50, size="large");
+            braille_on_flat("partial", $fn=50, size="large");
 
         translate([0,0,height])
             fwd(_braille_line_sep[1]*INCH/2)
-            braille("agonist", $fn=50, size="large");
+            braille_on_flat("agonist", $fn=50, size="large");
             
         translate([top_radius*1.5/2,0,height/2])
             prismoid(size1=[top_radius*1.5*0.98,arm_bottom_width], size2=[top_radius*1.5,arm_top_width], h=height, center=true);

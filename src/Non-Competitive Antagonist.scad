@@ -1,6 +1,4 @@
-include <BOSL2/std.scad>;
-include <brailleSCAD/en-us-g2.scad>;
-include <brailleSCAD/braille.scad>;
+include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
 include <Primitives.scad>;
 
@@ -13,7 +11,7 @@ module non_competitive_antagonist(pyramid_height, pyramid_base_width) {
 
     rotate([180,0,0])
         back(_braille_line_sep[1]*INCH/2)
-            braille(text="nca", $fn=50, size="large");
+            braille_on_flat(text="nca", $fn=50, size="large");
 }
 
 non_competitive_antagonist(stabbing_pyramid_height, stabbing_pyramid_base_width);

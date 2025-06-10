@@ -1,6 +1,4 @@
-include <BOSL2/std.scad>;
-include <brailleSCAD/en-us-g2.scad>;
-include <brailleSCAD/braille.scad>;
+include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
 
 // read receptor.scad
@@ -20,11 +18,11 @@ module full_agonist(bottom_radius, top_radius, hollow_radius, arm_bottom_width, 
             
         translate([0,0,height])
             back(_braille_line_sep[1]*INCH/2)
-            braille("full", $fn=50, size="large");
+            braille_on_flat("full", $fn=50, size="large");
 
         translate([0,0,height])
             fwd(_braille_line_sep[1]*INCH/2)
-            braille("agonist", $fn=50, size="large");
+            braille_on_flat("agonist", $fn=50, size="large");
             
         translate([0,0,height/2])
             prismoid(size1=[top_radius*3*0.98,arm_bottom_width], size2=[top_radius*3,arm_top_width], h=height, center=true);
