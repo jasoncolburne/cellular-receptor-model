@@ -36,6 +36,8 @@ created with a 0.4mm nozzle. The print time is nearly 4x, so I would stick with 
 and variable height layers. Ironing seemed to produce no appreciable effect, other than a better
 finish.
 
+## Learning Content
+
 ```
 the cellular receptor is modeled with a space for ligands (molecules that bond to receptors).
 
