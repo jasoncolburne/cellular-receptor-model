@@ -1,8 +1,6 @@
 include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
 
-// read receptor.scad
-
 module competitive_antagonist(bottom_radius, top_radius, height, resolution) {
     union() {
         difference() {

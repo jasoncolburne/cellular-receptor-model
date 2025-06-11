@@ -1,13 +1,40 @@
 # cellular-receptor-model
 
 An accessible (braille) openSCAD teaching model of a cellular receptor and its ligands,
-suitable for 3d printing.
+suitable for 3d/FDM printing.
 
-This was created to support an effort by Team Visual Assist at Dalhousie University (Canada). This design was inspired by
-[the original](https://github.com/FilipKosel/3DDrugReceptor).
+## Rationale
 
-The model was prototyped in Bambu Studio on a Bambu Lab A1 printer using standard settings
-and no AMS, after generating STL files using openSCAD.
+This was created to support an effort by Team Visual Assist at Dalhousie University (Canada). This
+design was inspired by [the original](https://github.com/FilipKosel/3DDrugReceptor).
+
+## Process
+
+The model was prototyped in Bambu Studio on a Bambu Lab A1 FDM printer using stock settings and no AMS
+(three plates/colors), after generating STL files using openSCAD. The filament used was Eureka PLA.
+
+### Braille
+
+I tested various implementations and processes for printing the braille:
+
+Implementations:
+1. Spheres
+2. Larger spheres
+3. Larger spheres embedded deeper (smoothing attempt)
+4. Cylinders with rounded tops
+
+There wasn't a ton of difference in the jagged feel the top facing braille has. Braille on vertical
+surfaces is far nicer, but the print doesn't really accomodate that for the three pieces containing
+the most braille.
+
+Processes:
+1. Variable height layering (0.04mm (braille) -> 0.1mm (base) w/ 0.2mm nozzle)
+2. Ironing
+
+Ultimately, the results produced with the 0.2mm nozzle do not seem that much better than those
+created with a 0.4mm nozzle. The print time is nearly 4x, so I would stick with the 0.4mm
+and variable height layers. Ironing seemed to produce no appreciable effect, other than a better
+finish.
 
 ```
 the cellular receptor is modeled with a space for ligands (molecules that bond to receptors).

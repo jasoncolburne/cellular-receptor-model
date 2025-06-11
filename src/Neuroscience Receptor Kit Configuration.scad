@@ -18,4 +18,4 @@ base_radius = 20;
 base_height = 20;
 
 resolution = 1024;
-tolerance = 1.004;
+tolerance = 1.01;
