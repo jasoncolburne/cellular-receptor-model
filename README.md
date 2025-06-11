@@ -3,6 +3,8 @@
 An accessible (braille) openSCAD teaching model of a cellular receptor and its ligands,
 suitable for 3d/FDM printing.
 
+![Cellular Receptor Model](./assets/Cellular%20Receptor%20Model.png)
+
 ## Rationale
 
 This was created to support an effort by Team Visual Assist at Dalhousie University (Canada). This
