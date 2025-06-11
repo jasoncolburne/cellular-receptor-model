@@ -8,7 +8,7 @@ module partial_agonist(bottom_radius, top_radius, hollow_radius, arm_bottom_widt
                 cylinder(h=height, r1=bottom_radius, r2=top_radius, center=true, $fn=5);
                 
             translate([0,0,height])
-                sphere(hollow_radius/1.666);
+                sphere(hollow_radius/1.666, $fn=resolution);
         }
 
         translate([0,0,height/2])
