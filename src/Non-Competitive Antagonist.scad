@@ -2,8 +2,6 @@ include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
 include <Primitives.scad>;
 
-// read receptor.scad
-
 module non_competitive_antagonist(pyramid_height, pyramid_base_width) {
     translate([0, 0, pyramid_height/2])
         rotate([0, 0, 45])
