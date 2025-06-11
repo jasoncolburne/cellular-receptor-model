@@ -5,6 +5,8 @@ suitable for 3d/FDM printing.
 
 ![Cellular Receptor Model](./assets/Cellular%20Receptor%20Model.png)
 
+I added the non-braille text in Bambu Studio, and eventually I'll publish the .3mf and link it here.
+
 ## Rationale
 
 This was created to support an effort by Team Visual Assist at Dalhousie University (Canada). This
