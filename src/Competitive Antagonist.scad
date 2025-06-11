@@ -8,7 +8,7 @@ module competitive_antagonist(bottom_radius, top_radius, height, resolution) {
                 cylinder(h=height, r1=bottom_radius, r2=top_radius, $fn=resolution, center=true);
 
             translate([0,0,height])
-                sphere(top_radius/1.666);
+                sphere(top_radius/1.666, $fn=resolution);
         }
 
         translate([0,0,height/2])
