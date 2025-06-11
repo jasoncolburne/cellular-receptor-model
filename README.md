@@ -50,13 +50,14 @@ top view:
     _  x  _    
      \___/
 
-the slots on the side of the receptor can be thought of as activation pathways - when both
-are filled, the receptor is fully activated, producing a maximal response.
+the slots on the side of the receptor can be thought of as (conceptual) activation points - when
+both are filled, the receptor is fully activated, producing a maximal response. when one is filled,
+this represents a partial state of activation that is somewhere between no response and the maximum.
 
 top view:
       ___
     _/   \_
-    _     _<- activation pathway
+    _     _<- activation point
      \___/
 
 the different ligands that bind to these sites produce varying effects, and they compete to
@@ -72,11 +73,11 @@ the components of the kit demonstrate interactions with various ligands.
 
 full agonist - a molecule that bonds to the receptor and activates it with maximum efficacy.
   in our model, the full agonist is a hexagon that fills the receptor's primary binding site
-  perfectly and activates all activation points.
+  perfectly.
 
 partial agonist - a molecule that bonds to the receptor and activates it with less than optimal
   efficacy. in our model, the partial agonist is a pentagon that fits in the hexagon shaped
-  binding site, and activates a single activation point.
+  binding site, and activates a single activation point - representing a partial activation.
 
 competitive antagonist - a molecule that bonds to the receptor and produces no effect, reducing
   the effect of agonists in the same system. in our model, the competitive antagonist is a circle
