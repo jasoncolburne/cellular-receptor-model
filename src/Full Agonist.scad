@@ -1,12 +1,19 @@
 include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
+include <Primitives.scad>;
+
+top_label = "full";
+bottom_label = "agonist";
 
 module full_agonist(bottom_radius, top_radius, hollow_radius, arm_bottom_width, arm_top_width, height) {
     union() {
         difference() {
             translate([0,0,height/2])
                 cylinder(h=height, r1=bottom_radius, r2=top_radius, center=true, $fn=6);
-                
+            
+            text_on_tapered_polyhedron_face(6, bottom_radius, top_radius, height, 4, top_label, 17);
+            text_on_tapered_polyhedron_face(6, bottom_radius, top_radius, height, 4, bottom_label, 8);
+            
             translate([0,0,height])
                 sphere(hollow_radius/1.666, $fn=resolution);
         }

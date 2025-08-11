@@ -17,5 +17,10 @@ stabbing_pyramid_height = 50;
 base_radius = 20;
 base_height = 20;
 
-resolution = 1024;
+resolution = 512;
 tolerance = 1.01;
+
+font_size = 8;
+label_depth = 0.2;
+
+$fn=resolution;
