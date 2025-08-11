@@ -53,6 +53,14 @@ include <Primitives.scad>;
 
 // receptor class
 
+label = "receptor";
+font_size = 8;
+label_depth = 0.2;
+
+label_widths = [for (i=[0:len(label)-1]) textmetrics(label[i], size=font_size).size[0]];
+
+label_offsets = make_offsets(label_widths, pad=0.1);
+
 module receptor(
     base_radius,
     base_height,
@@ -106,7 +114,10 @@ module receptor(
     
     union() {
 
-        base();
+        difference() {
+            base();
+            text_on_cone(label, label_depth, label_widths, label_offsets, base_radius, base_radius, base_height, -90, base_height/2 - 3);
+        }
         
         // top rounded goblety part
         difference() {

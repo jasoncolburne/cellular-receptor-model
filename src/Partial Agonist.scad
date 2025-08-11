@@ -1,12 +1,19 @@
 include <braille-on-flat.scad>;
 include <Neuroscience Receptor Kit Configuration.scad>;
+include <Primitives.scad>;
+
+top_label = "partial";
+bottom_label = "agonist";
 
 module partial_agonist(bottom_radius, top_radius, hollow_radius, arm_bottom_width, arm_top_width, height) {
     union() {
         difference() {
             translate([0,0,height/2])
                 cylinder(h=height, r1=bottom_radius, r2=top_radius, center=true, $fn=5);
-                
+
+            text_on_tapered_polyhedron_face(5, bottom_radius, top_radius, height, 3, top_label, 17);
+            text_on_tapered_polyhedron_face(5, bottom_radius, top_radius, height, 3, bottom_label, 8);
+
             translate([0,0,height])
                 sphere(hollow_radius/1.666, $fn=resolution);
         }
