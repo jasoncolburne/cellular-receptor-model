@@ -3,9 +3,10 @@
 An accessible (braille) openSCAD teaching model of a cellular receptor and its ligands,
 suitable for 3d/FDM printing.
 
-![Cellular Receptor Model](./assets/Cellular%20Receptor%20Model.png)
+**I printed at a layer height of 0.20mm**
+**I needed a single small support under the hole of the grey receptor.**
 
-I added the non-braille text in Bambu Studio, and eventually I'll publish the .3mf and link it here.
+![Cellular Receptor Model](./assets/Cellular%20Receptor%20Model.png)
 
 ## Rationale
 
