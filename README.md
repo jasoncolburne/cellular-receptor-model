@@ -16,8 +16,9 @@ design was inspired by [the original](https://github.com/FilipKosel/3DDrugRecept
 
 ## Process
 
-The model was prototyped in Bambu Studio on a Bambu Lab A1 FDM printer using stock settings and no AMS
-(three plates/colors), after generating STL files using openSCAD. The filament used was Eureka PLA.
+The model was prototyped in Bambu Studio on Bambu Lab A1/X2D FDM printers using stock settings and no AMS
+(three plates/colors), after generating STL files using openSCAD. The filament used was Eureka PLA. There
+is a 3mf file included in [./3mf/](./3mf/)
 
 ### Braille
 
