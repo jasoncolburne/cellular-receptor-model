@@ -20,6 +20,9 @@ The model was prototyped in Bambu Studio on Bambu Lab A1/X2D FDM printers using 
 (three plates/colors), after generating STL files using openSCAD. The filament used was Eureka PLA. There
 is a 3mf file included in [./3mf/](./3mf/)
 
+**Fuzzy Skin**: In the .3mf file, the endogenous models are printed using fuzzy skin. The two full agonist
+models (exogenous and endogenous) are color matched and texture matched for accessibility.
+
 ### Braille
 
 I tested various implementations and processes for printing the braille:
