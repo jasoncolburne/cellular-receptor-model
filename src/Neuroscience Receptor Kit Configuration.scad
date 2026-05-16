@@ -4,7 +4,7 @@
 
 receptor_radius = 50;
 receptor_rim_height = 5;
-receptor_rim_top_thickness = 10;
+receptor_rim_top_thickness = 9.9;
 receptor_rim_bottom_thickness = receptor_rim_top_thickness + 2.5;
 receptor_rim_cut_top_width = 10.2;
 // this is a snowflake (all other values are multiples of 2.5)
