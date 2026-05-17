@@ -60,6 +60,7 @@ label_depth = 0.2;
 label_widths = [for (i=[0:len(label)-1]) textmetrics(label[i], size=font_size).size[0]];
 
 label_offsets = make_offsets(label_widths, pad=0.1);
+local_tolerance = 0.25;
 
 module receptor(
     base_radius,
@@ -173,10 +174,10 @@ receptor(
     base_height,
     receptor_radius,
     receptor_rim_height,
-    receptor_rim_top_thickness,
-    receptor_rim_bottom_thickness,
-    receptor_rim_cut_top_width,
-    receptor_rim_cut_bottom_width,
+    receptor_rim_top_thickness - local_tolerance,
+    receptor_rim_bottom_thickness - local_tolerance,
+    receptor_rim_cut_top_width + local_tolerance,
+    receptor_rim_cut_bottom_width + local_tolerance,
     receptor_rim_cut_depth,
     stabbing_pyramid_base_width,
     stabbing_pyramid_height,
